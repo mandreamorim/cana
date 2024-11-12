@@ -18,11 +18,11 @@ public class Demo {
         cities.add(new City("F", new int[]{1, 4}));
         cities.add(new City("G", new int[]{3, 8}));
         cities.add(new City("H", new int[]{4, 7}));
-        cities.add(new City("I", new int[]{0, 9}));
+//        cities.add(new City("I", new int[]{0, 9}));
 //        cities.add(new City("J", new int[]{5, 0}));
 //        cities.add(new City("K", new int[]{0, 2}));
 //        cities.add(new City("L", new int[]{6, 4}));
-//        cities.add(new City("M", new int[]{2, 8}));
+        cities.add(new City("M", new int[]{2, 8}));
 //        cities.add(new City("N", new int[]{5, 1}));
 //        cities.add(new City("O", new int[]{7, 3}));
 //        cities.add(new City("P", new int[]{8, 8}));
