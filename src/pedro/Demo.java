@@ -2,7 +2,6 @@ package pedro;
 
 import pedro.Objects.Aresta;
 import pedro.Objects.Vertice;
-import pedro.View.GraphView;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,8 +10,6 @@ import java.util.ArrayList;
 public class Demo extends JPanel{
     static ArrayList<Vertice> vertices = new ArrayList<>();
     static ArrayList<Aresta> arestas = new ArrayList<>();
-    static JFrame frame;
-    static GraphView panel;
 
     public static void main(String[] args) throws InterruptedException {
         Vertice marcos = new Vertice("Marcos", new int[]{1, 1});
@@ -55,14 +52,5 @@ public class Demo extends JPanel{
         Vertice.createLink(hahaha, pompeu, arestas);
         Vertice.createLink(pedro, rammus, arestas);
         Vertice.createLink(pompeu, professor, arestas);
-
-
-        frame = new JFrame("Graph Visualization");
-        panel = new GraphView(vertices, arestas);
-        frame.add(panel);
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setSize(screenSize.width, screenSize.height);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
     }
 }

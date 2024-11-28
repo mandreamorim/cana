@@ -1,12 +1,6 @@
 package pedro;
 
-import pedro.Objects.Aresta;
 import pedro.Objects.Vertice;
-import pedro.View.GraphView;
-
-import javax.swing.*;
-import java.awt.*;
-import java.util.ArrayList;
 
 public class DemoLargura extends Demo{
     public static void main(String[] args) throws InterruptedException {
@@ -25,7 +19,7 @@ public class DemoLargura extends Demo{
         Vertice pompeu = vertices.get(10);
         Vertice rammus = vertices.get(11);
 
-        System.out.println("Distância:" + BuscaLargura.buscar(marcos, bereats, panel));
+        System.out.println("Distância:" + BuscaLargura.buscar(marcos, bereats));
 
     }
 }

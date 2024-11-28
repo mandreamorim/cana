@@ -3,8 +3,8 @@ package caxeiroviajante;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import static caxeiroviajante.Demo.updateVis;
-import static caxeiroviajante.Demo.visualizer;
+//import static caxeiroviajante.Demo.updateVis;
+//import static caxeiroviajante.Demo.visualizer;
 
 public class CaxeiroViajante {
     static public ArrayList<City> cities = new ArrayList<>();
@@ -18,10 +18,10 @@ public class CaxeiroViajante {
     }
 
     public static void permutateCourses(String path, double distance, int previous ,ArrayList<Integer> remaining){
-        updateVis(path, visualizer);
+//        updateVis(path, visualizer);
         if(remaining.isEmpty()){
-//            finalList.add(new Final(path,distance));
-            addOrdenado(finalList, new Final(path, distance));
+            finalList.add(new Final(path,distance));
+//            addOrdenado(finalList, new Final(path, distance));
             return;
         }
         for(int i = 0; i < remaining.size(); i++){
@@ -35,10 +35,10 @@ public class CaxeiroViajante {
     }
 
     public static void permutateCourses(String path, double distance, ArrayList<Integer> remaining){
-        updateVis(path, visualizer);
+//        updateVis(path, visualizer);
         if(remaining.isEmpty()){
-//            finalList.add(new Final(path,distance));
-            addOrdenado(finalList, new Final(path, distance));
+            finalList.add(new Final(path,distance));
+//            addOrdenado(finalList, new Final(path, distance));
             return;
         }
         int size = remaining.size();
@@ -51,12 +51,12 @@ public class CaxeiroViajante {
         }
     }
 
-    public static void addOrdenado(ArrayList<Final> lista, Final elemento) {
-        int pos = Collections.binarySearch(lista, elemento);
-
-        // Se não encontrou a posição, binarySearch retorna (-(insertion point) - 1)
-        if (pos < 0) pos = -(pos + 1);
-
-        lista.add(pos, elemento);
-    }
+//    public static void addOrdenado(ArrayList<Final> lista, Final elemento) {
+//        int pos = Collections.binarySearch(lista, elemento);
+//
+//        // Se não encontrou a posição, binarySearch retorna (-(insertion point) - 1)
+//        if (pos < 0) pos = -(pos + 1);
+//
+//        lista.add(pos, elemento);
+//    }
 }
